@@ -1,24 +1,3 @@
-# point-grid.css
-WIP: relative point layout system in CSS
-
-## Install
-
-`npm install point.css@1.0.0-pre`
-
-or in-browser
-
-`<link rel="stylesheet" href="//unpkg.com/point.css@1.0.0-pre" />
-
-## Use
-
-```
-<div class="m-1 p-2">
-  This has .5rem margin and 3rem padding.
-</div>
-```
-
-## All the code
-
 /*! point.css */
 .m-1{margin:.5rem}
 .m-2{margin:1rem}
@@ -92,11 +71,3 @@ or in-browser
 .l-2{left:1rem}
 .l-3{left:2rem}
 .l-4{left:4rem}
-
-## Options
-
-If you're in a situation where `rem` isn't a usable value, there are fixed pixel versions available.
-
-[7-point.css](./7-point.css)
-[8-point.css](./8-point.css)
-[10-point.css](./10-point.css)
