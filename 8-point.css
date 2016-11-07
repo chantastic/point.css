@@ -89,3 +89,15 @@
 .l-2{left:16px}
 .l-3{left:32px}
 .l-4{left:64px}
+.s-1{width:8px;height:8px}
+.s-2{width:16px;height:16px}
+.s-3{width:32px;height:32px}
+.s-4{width:64px;height:64px}
+.w-1{width:8px}
+.w-2{width:16px}
+.w-3{width:32px}
+.w-4{width:64px}
+.h-1{height:8px}
+.h-2{height:16px}
+.h-3{height:32px}
+.h-4{height:64px}
