@@ -7,7 +7,7 @@ WIP: relative point layout system in CSS
 
 or in-browser
 
-`<link rel="stylesheet" href="//unpkg.com/point.css@1.0.0-pre" />
+`<link rel="stylesheet" href="//unpkg.com/point.css@1.0.0-pre" />`
 
 ## Use
 
@@ -19,6 +19,7 @@ or in-browser
 
 ## All the code
 
+```css
 /*! point.css */
 .m-1{margin:.5rem}
 .m-2{margin:1rem}
@@ -92,6 +93,7 @@ or in-browser
 .l-2{left:1rem}
 .l-3{left:2rem}
 .l-4{left:4rem}
+```
 
 ## Options
 
