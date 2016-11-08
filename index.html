@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <title>point.css &ndash; unit-based layout classes.</title>
   <style>
+    .demo-style{display: block;font-family: monospace;white-space: pre;margin-top: -1rem}
     .ff-system-sans{font-family:-apple-system,BlinkMacSystemFont,sans-serif}
     .fw-900{font-weight:900}
     .fw-800{font-weight:800}
@@ -30,14 +31,10 @@
     code { background-color: #e3e3e3; padding: .125rem .25rem; border-radius: .25rem }
     pre code { background-color: transparent; }
 
-    /* media by Nicole Sullivan, stripped down for demo */
-    .media,
-    .bd {overflow:hidden}
-    .media .img {float:left}
   </style>
   <link rel="stylesheet" href="./point.css" />
 </head>
-<body class="ff-system-sans mb_4" style="padding: 5vw 10vw">
+<body class="ff-system-sans mb_4" style="padding: 5vw 10vw; line-height: 1.5; max-width: 720px">
   <header>
     <h1 class="fw-900">
       point.css
@@ -49,24 +46,30 @@
     <p>Unit-based layout classes.</p>
   </header>
 
-  <section>
-    <h2 class="fw-800">Stats</h2>
+  <section id="what">
+    <h2 class="fw-800">What</h2>
 
-    <code>105 selectors, 611B gzipped</code>
+    <p>105 selectors for layout on a point grid.</p>
+    <p>A point grid is like graph paper. The gaps between dots are the smallest single unit of measurement.</p>
+    <p>In point.css, the gaps are <code>.5rem</code></p>
   </section>
 
-  <section>
-    <style>
-      .d-f { display: flex }
-      .f-1 { flex: 1 }
+  <section id="example">
+    <h2 class="fw-800">Example</h2>
+    <p>This is the <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a> with all opinions about layout removed.</p>
+    <style class="demo-style">
+.media,
+.bd {overflow:hidden}
+.media .img {float:left}
     </style>
 
-    <h2 class="fw-800">Examples</h2>
-    <p><em>Inspect this in the dev tools to see what's going on.</em></p>
+    <p>
+      This example uses `.media` for position and point.css for widths and sizes.
+    </p>
 
-    <div class="media attribution p-2" style="border: 1px solid black; border-radius: 4px; max-width: 480px">
+    <div class="media attribution p-2" style="border: 1px solid black; border-radius: 4px">
       <a href="http://twitter.com/stubbornella" class="img mr-1">
-        <svg viewBox="0 0 100 100" style="width: 32px; height: 32px" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>
+        <svg viewBox="0 0 100 100" class="s-3" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>
       </a>
 
       <div class="bd">
@@ -86,9 +89,31 @@
         </div>
       </div>
     </div>
+    <p><em>Open this in your inspector.</em></p>
   </section>
 
-  <section>
+  <section id="stats">
+    <h2 class="fw-800">Stats</h2>
+
+    <p>105 selectors, 611B gzipped, unlimited possibilites.</p>
+  </section>
+
+  <section id="implementation">
+    <h2 class="fw-800">Implementation</h2>
+
+    <ul>
+      <li>.5rem as the smallest unit of measurement.</li>
+      <li>Modular scale: 1x, 2x, 4x, 8x</li>
+      <li><a href="minions.css" target="_blank"/>minions.css</a> style class names.</li>
+    </ul>
+
+    If don't like the class names, use <a href="http://jxnblk.com/gravitons/" target="_blank">Gravitons</a>.
+  </section>
+
+
+  <section class="Usage">
+    <h2 class="fw-800">Usage</h2>
+
     <h3 class="fw-800">margin</h3>
 
     <div class="gc-margin demo margin-demo"><div class="m-1">m-1</div></div><br />
@@ -165,7 +190,7 @@
     </table>
   </section>
 
-  <section>
+  <section id="code">
     <h2 class="fw-800">Code</h2>
     <pre><code>
 /*! point.css */
@@ -277,14 +302,14 @@
     </code></pre>
   </section>
 
-  <section>
+  <section id="install">
     <h2 class="fw-800">Install</h2>
     <code>npm install point.css</code>
     <p>or in-browser</p>
     <code>&lt;link rel="stylesheet" href="https://unpkg.com/point.css@1.0.0-pre" /&gt;</code>
   </section>
 
-  <section>
+  <section id="alternatives">
     <h2 class="fw-900">Alternatives</h2>
 
     <p>If you work in an application where <code>rem</code> has been fiddled with, use one of these alternatives that fixed with pixels.</p>
@@ -295,7 +320,7 @@
       <li><a href="https://github.com/chantastic/point.css/blob/master/10-point.css">10-point (pixel)</a></li>
     </ul>
   </section>
-  
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
