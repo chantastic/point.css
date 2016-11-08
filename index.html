@@ -21,6 +21,10 @@
     .demo::before,.demo::after{content:"";display:table}
     .m-0 {margin: 0}
 
+    .github-link{fill: #808080}
+    .github-link:hover{fill: #f0c}
+    .github-link:active{fill: #c0a}
+
     code { font-size: 1.231em }
 
     code { background-color: #e3e3e3; padding: .125rem .25rem; border-radius: .25rem }
@@ -35,16 +39,15 @@
 </head>
 <body class="ff-system-sans mb_4" style="padding: 5vw 10vw">
   <header>
-    <h1 class="fw-900">point.css</h1>
+    <h1 class="fw-900">
+      point.css
+
+      <a href="https://github.com/chantastic/point.css" class="ml-1" style="vertical-align: middle">
+        <svg viewBox="0 0 16 16" class="s-3 github-link"><path d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+      </a>
+    </h1>
     <p>Unit-based layout classes.</p>
   </header>
-
-  <section>
-    <h2 class="fw-800">Install</h2>
-    <code>npm install point.css</code>
-    <p>or in-browser</p>
-    <code>&lt;link rel="stylesheet" href="https://unpkg.com/point.css@1.0.0-pre" /&gt;</code>
-  </section>
 
   <section>
     <h2 class="fw-800">Stats</h2>
@@ -109,23 +112,27 @@
     <h3>TRBL</h3>
 
     <div style="background-color:red">
-      <div class="t-1" style="position: relative; background-color: white; border: 1px dashed black">t-1</div>
+      <div class="t-1" style="position: relative; background-color: white; border: 1px dashed black; box-shadow: 0 4px 8px -2px rgba(0,0,0,0.4)">t-1</div>
     </div>
+    <br />
     <br />
 
     <div style="background-color:red">
-      <div class="r-1" style="position: relative; background-color: white; border: 1px dashed black">r-1</div>
+      <div class="r-1" style="position: relative; background-color: white; border: 1px dashed black; box-shadow: 0 4px 8px -2px rgba(0,0,0,0.4)">r-1</div>
     </div>
+    <br />
     <br />
 
     <div style="background-color:red">
-      <div class="b-1" style="position: relative; background-color: white; border: 1px dashed black">b-1</div>
+      <div class="b-1" style="position: relative; background-color: white; border: 1px dashed black; box-shadow: 0 4px 8px -2px rgba(0,0,0,0.4)">b-1</div>
     </div>
+    <br />
     <br />
 
     <div style="background-color:red">
-      <div class="l-1" style="position: relative; background-color: white; border: 1px dashed black">l-1</div>
+      <div class="l-1" style="position: relative; background-color: white; border: 1px dashed black; box-shadow: 0 4px 8px -2px rgba(0,0,0,0.4)">l-1</div>
     </div>
+    <br />
     <br />
 
     <h3 class="fw-900">size</h3>
@@ -271,6 +278,13 @@
   </section>
 
   <section>
+    <h2 class="fw-800">Install</h2>
+    <code>npm install point.css</code>
+    <p>or in-browser</p>
+    <code>&lt;link rel="stylesheet" href="https://unpkg.com/point.css@1.0.0-pre" /&gt;</code>
+  </section>
+
+  <section>
     <h2 class="fw-900">Alternatives</h2>
 
     <p>If you work in an application where <code>rem</code> has been fiddled with, use one of these alternatives that fixed with pixels.</p>
@@ -281,5 +295,16 @@
       <li><a href="https://github.com/chantastic/point.css/blob/master/10-point.css">10-point (pixel)</a></li>
     </ul>
   </section>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46843279-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </body>
 </html>
