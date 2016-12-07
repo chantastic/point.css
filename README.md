@@ -3,11 +3,11 @@ WIP: relative point layout system in CSS
 
 ## Install
 
-`npm install point.css@1.0.0-pre`
+`npm install point.css`
 
 or in-browser
 
-`<link rel="stylesheet" href="//unpkg.com/point.css@1.0.0-pre" />`
+`<link rel="stylesheet" href="//unpkg.com/point.css" />`
 
 ## Use
 
@@ -99,6 +99,6 @@ or in-browser
 
 If you're in a situation where `rem` isn't a usable value, there are fixed pixel versions available.
 
-[7-point.css](./7-point.css)
-[8-point.css](./8-point.css)
-[10-point.css](./10-point.css)
+[7-point.css](./7-point.css)  
+[8-point.css](./8-point.css)  
+[10-point.css](./10-point.css)  
