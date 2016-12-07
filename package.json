@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/chantastic/point-grid.css/issues"
   },
-  "homepage": "https://github.com/chantastic/point-grid.css#readme"
+  "homepage": "https://github.com/chantastic/point-grid.css#readme",
+  "devDependencies": {
+    "lerna": "2.0.0-beta.30"
+  }
 }
