@@ -1,6 +1,6 @@
 {
   "name": "point.css",
-  "version": "1.0.0-beta",
+  "version": "1.0.0-beta-1",
   "description": "Point-based layout system for CSS",
   "main": "point.css",
   "style": "point.css",
